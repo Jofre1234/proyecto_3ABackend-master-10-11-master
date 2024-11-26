@@ -1,0 +1,11 @@
+<p>matrices works!</p>
+<div class="matrix-wrapper">
+    <div *ngFor="let matrix of matrices" class="matrix">
+      <h3>{{ matrix.size }} x {{ matrix.size }}</h3>
+      <div class="grid">
+        <div *ngFor="let cell of matrix.cells" class="cell">
+          {{ cell }}
+        </div>
+      </div>
+    </div>
+  </div>  
